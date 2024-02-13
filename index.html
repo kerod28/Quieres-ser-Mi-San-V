@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤¿Quieres ser mi San Valentin?❤</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body class="body">
+ <h1 class="body_title">❤¿Quieres ser mi San Valentin?❤</h1>   
+ <center>
+<img src="https://stickerly.pstatic.net/sticker_pack/RoQKd7eh2a6EUxtCfRXefw/PTDFFC/16/1673169482169.png" 
+alt="Foto gatito" class="body_img"> 
+</center>
+<div class ='contenedor'>
+  
+<button id="yes">❤Si quiero❤</button>
+<button id="no">😨No quiero😨</button>
+</div>
+<script>
+    const vutonSi = document.getElementById('yes')
+    const vutonNo = document.getElementById('no')
+
+    const siSeremos = () => {
+        alert('❤Siempre lo supe jamas lo dude❤')
+        alert('🥵Mañana estaremos bien pochinos 🥵')
+        location.href = 'https://www.youtube.com/watch?v=xCizlYwsO_Y=33s';
+        }
+
+   const EvitarQueSeRompaMiCora = () => {
+      vutonNo.style.position = 'absolute';
+      vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+      vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';      
+        }
+
+  vutonSi.addEventListener('click', siSeremos);
+  vutonNo.addEventListener('mouseover', EvitarQueSeRompaMiCora);
+</script>
+</body>
+</html>
